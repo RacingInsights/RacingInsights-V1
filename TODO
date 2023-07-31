@@ -1,0 +1,54 @@
+Possible next TODOs:
+PRIO: 
+- Still need to include the refactored implementation of saving the logged relative estimation data to dynamoDB.
+- Add functionality that app can be opened as tray icon without the need for the main dashboard to open up every time
+  (https://youtu.be/BdQOFOyHgfk)
+- Spectator support. Refuel amount doesn't work for this yet
+
+PRODUCTION:
+- obfuscate credential string in code
+- Remove scenario_freezer and make sure we don't build its additional packages (keyboard, remove also from requirements)
+- Add some more data validation (min-max) for loading the config 
+- Needs to get access through firewall because of the https calls (possible using an installer?)
+
+BUGS:
+- When driving in team event:
+    - Names do not always match (displays name of first driver in car or something)
+- when opening other overlay application, mine gets minimized to the background, is there a way to prevent?
+- scenario freezer doesn't respond to key presses when app was already opened before entering iRacing sim
+
+USER EXPERIENCE:
+- Overlays get minimized when alt tabbing from game, need to be reopened to appear again
+- Make it possible to set the width of the entire overlay fixed, even when removing columns
+- RelativeScreen: Add option to
+    - toggle car number box activation
+    - choose to show live position/over-the-line position
+- Make a dark titlebar
+- Fix bug that correct app icon only shows in main screen taskbar and not second screen taskbar (normal python app logo)
+- Color blindness
+
+OPTIONAL:
+- Add scenario freeze to exception logging (minus the screenshot)
+
+NEXT STEPS:
+- Windows certificate?
+- BTW nummer/eenmanszaak openen
+- Web site
+- Build remaining overlays:
+    Standard ideas:
+        - The radar with the bar like in Kapps
+        - Standings
+        - Pit window indicator 
+        - Track map
+            - Mike's idea of corner names showing up when driving (to learn them)
+        - Driver inputs (pedals, steering)
+        - Tire indicator
+        - ABS/TC lights
+    Innovative ideas:
+        - Excess steering indicator
+        - Situational Awareness (Radar for cars around like ACC)
+        - Remaining track space indicator (distance between car edge and grass/end of road surface)
+        - Beep when throttle and brake at the same time (Tobias idea)
+
+- Data collection in cloud:
+    - Save the config_data.yaml data in a database after user closes their app

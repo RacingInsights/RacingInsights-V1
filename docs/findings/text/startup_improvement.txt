@@ -1,0 +1,40 @@
+There are a few ways to reduce the startup time of a standalone executable built using Nuitka:
+
+Use the --recursion-limit option to limit the depth of the call stack. This can significantly reduce startup time for large, complex projects.
+
+Use the --lto option to enable link-time optimization. This can further reduce startup time by optimizing the executable at the link stage.
+
+Use the --remove-output option to remove unnecessary files from the output directory. This can help reduce the size of the executable and therefore the time it takes to load it into memory.
+
+Use the --no-python-version-warning option to skip the python version check. This can reduce the startup time.
+
+Use the --nofollow-import-to option to skip importing unnecessary modules.
+
+It's worth noting that some of the above options may have negative impact on the performance of the final executable, so it's recommended to test them and see the effect on your specific case.
+
+
+
+PyOxidizer is a tool that aims to improve the startup time of standalone executables built from Python code by embedding a Python interpreter and all necessary dependencies into a single binary executable. It also embeds a JIT compiler (PyOxidizer uses PyPy interpreter) which can result in faster execution time once the code is running.
+
+So, in general, a standalone executable built with PyOxidizer should have a faster startup time than the same app built with Nuitka. This is because PyOxidizer embeds the interpreter and dependencies directly into the executable, which eliminates the need to load them into memory at runtime. Also, the JIT compiler can speed up the execution time once the code starts running.
+
+It's worth noting that PyOxidizer is relatively new tool and Nuitka is a well-established one, so it's possible that you may find more support and examples for Nuitka than PyOxidizer. Also, the size of the executable built with PyOxidizer may be larger than the one built with Nuitka due to the embedded interpreter and dependencies.
+
+
+There are a few ways to measure the startup time of an executable:
+
+One way is to use the command line tool time on Windows or Linux. You can run the executable with the time command in front of it and it will return the real time, user time, and system time that it took to start the executable.
+
+Another way is to use the perf command on Linux. This command allows you to measure the performance of your executable and can give you detailed information about the time it takes to start up.
+
+You can also use a script to measure the startup time. This can be done by using the time module in Python and measuring the time before and after running the executable.
+
+You can use third-party tools such as Process Monitor on Windows or strace on Linux. These tools allow you to capture detailed information about the system calls made by the executable during startup.
+
+You can also use a profiler like cProfile in Python to measure the time of the startup of the executable.
+
+It's worth noting that the startup time of an executable can be affected by many factors, such as the system resources available, the configuration of the system, and the specific actions that the executable performs during startup. Therefore, it's recommended to measure the startup time multiple times and under different conditions to get a more accurate picture of the performance of the executable.
+
+------------------------------------------------------------------------------------
+- Startup time seems to be slowed down a bit by windows defender
+Will this be better after signing the app?

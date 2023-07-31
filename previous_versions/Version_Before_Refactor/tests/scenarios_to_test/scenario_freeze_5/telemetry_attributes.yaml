@@ -1,0 +1,89 @@
+avg_cons: 0.4117698669433594
+avg_lap_time: 0.0
+cons: 0.4117698669433594
+fuel: 44.77421569824219
+laps_ir: 0
+laps_left_current: 113
+laps_left_extra: 114
+laps_left_in_race: 0
+laps_refuel: 0
+last_lap_time: 0.0
+player_location_in_resorted: 3
+prev_lap_fuel: 46.912261962890625
+refuel: 0.0
+relative_data:
+- car_brand: Audi R8 LMS
+  car_class_color: 16734344
+  car_class_name: IMSA23
+  car_id: 8
+  car_nr: 86
+  class_position: 2
+  driver_name: "Marc K\xF6nig"
+  in_pit: false
+  ir_license: A 3.71
+  irating: 1982
+  is_player: false
+  laps: 21
+  license_color: 87003
+  relative: 50.425854640792345
+- car_brand: Lamborghini GT3
+  car_class_color: 16734344
+  car_class_name: IMSA23
+  car_id: 51
+  car_nr: 52
+  class_position: 17
+  driver_name: "Gin\xE9s Ortin"
+  in_pit: false
+  ir_license: B 3.56
+  irating: 1521
+  is_player: false
+  laps: 3
+  license_color: 50946
+  relative: 1.0667356015056382
+- car_brand: BMW LMDh / GTP
+  car_class_color: 16767577
+  car_class_name: BMW M Hybrid V8
+  car_id: 59
+  car_nr: 60
+  class_position: 12
+  driver_name: Paul Kirkby
+  in_pit: false
+  ir_license: B 3.88
+  irating: 1238
+  is_player: false
+  laps: 5
+  license_color: 50946
+  relative: 0.8453224434734623
+- car_brand: Mercedes GT3 2020
+  car_class_color: 16734344
+  car_class_name: IMSA23
+  car_id: 53
+  car_nr: 54
+  class_position: 0
+  driver_name: Thibeau Teuwen
+  in_pit: false
+  ir_license: A 3.68
+  irating: 2784
+  is_player: true
+  laps: 1
+  license_color: 87003
+  relative: 0.0
+- car_brand: Audi R8 LMS
+  car_class_color: 16734344
+  car_class_name: IMSA23
+  car_id: 61
+  car_nr: 63
+  class_position: 4
+  driver_name: Andrew Kenny
+  in_pit: false
+  ir_license: A 4.84
+  irating: 2904
+  is_player: false
+  laps: 13
+  license_color: 87003
+  relative: -5.435390063922063
+session_type: Practice
+target_cons_current: 0.4124978934769082
+target_cons_extra: 0.4088794909025494
+target_finish: 0
+time_left: 2903.5999511534255

@@ -1,0 +1,50 @@
+config:
+  bg_color: '#1C1C1C'
+  button_height: 1
+  button_width: 17
+  small_button_width: 7
+fuel:
+  avg_activated: true
+  fg_color_header: '#0061B7'
+  fg_color_special: '#E12D5C'
+  fg_color_values: '#EAEAEA'
+  finish_activated: true
+  font_size: 16
+  fuel_activated: true
+  last_activated: true
+  offset_down: 5
+  offset_right: 5
+  range_activated: true
+  refuel_activated: true
+  remaining_activated: true
+  safety_margin: 5
+  target_activated: true
+  text_padding: 5
+login:
+  auto_login_activation: true
+  height: 690
+  width: 420
+main:
+  fuel_open_on_startup: true
+  height: 690
+  relative_open_on_startup: true
+  width: 420
+relative:
+  font_size: 17
+  hide_pits: false
+  irating_activated: true
+  license_activated: true
+  offset_down: 336
+  offset_right: 1327
+  text_padding_x: 1
+  text_padding_y: 0
+root:
+  font_extra: bold
+  font_size: 16
+  font_style: TkFixedFont
+settings:
+  block_height: 100
+  block_width: 200
+  checkbutton_width: 10
+  height: 950
+  width: 420

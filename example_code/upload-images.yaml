@@ -1,0 +1,21 @@
+name: Upload Repository
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+jobs:
+  upload:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Upload Repository
+      uses: actions/upload-artifact@v3
+      with:
+        name: repository
+        path: ./images/
+        if-no-files-found: error

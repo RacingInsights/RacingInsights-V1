@@ -1,0 +1,29 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>648</x><y>128</y><w>200</w><h>104</h></coordinates><panel_attributes>MainScreen
+--
+self.settings_app = SettingsScreen()
+self.fuel_app = FuelScreen()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>320</y><w>216</w><h>104</h></coordinates><panel_attributes>SettingsScreen(ChildScreen)
+--
+self.parent_obj = MainScreen.obj
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>768</x><y>320</y><w>272</w><h>104</h></coordinates><panel_attributes>FuelScreen(ChildScreen)
+--
+self.parent_obj = MainScreen.obj
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>152</y><w>104</w><h>48</h></coordinates><panel_attributes>
+root: Tk
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>416</x><y>160</y><w>248</w><h>32</h></coordinates><panel_attributes>lt=-
+is master of &gt;</panel_attributes><additional_attributes>10;20;290;20</additional_attributes></element><element><id>Relation</id><coordinates><x>680</x><y>224</y><w>88</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+is parent of &gt;</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Relation</id><coordinates><x>808</x><y>224</y><w>88</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+is parent of &gt;</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>520</y><w>104</w><h>48</h></coordinates><panel_attributes>
+: Toplevel
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>416</x><y>528</y><w>240</w><h>32</h></coordinates><panel_attributes>lt=-
+is master of &gt;</panel_attributes><additional_attributes>10;20;280;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>496</y><w>224</w><h>144</h></coordinates><panel_attributes>/ChildScreen {abstract}/
+--
+self.parent_obj
+self.master = Toplevel(self.parent_obj.master)
+
+self.width
+self.height
+--
+set_window_size(self)
+open_in_middle(self)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>648</x><y>416</y><w>56</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;50;100</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>416</y><w>64</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;100</additional_attributes></element></diagram>

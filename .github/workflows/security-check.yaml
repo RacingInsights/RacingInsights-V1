@@ -1,0 +1,18 @@
+name: Security check
+
+on: [push]
+
+jobs:
+  security-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check-out the repository
+      uses: actions/checkout@v3
+
+    - name: Run PyCharm Security
+      uses: tonybaloney/pycharm-security@master
+      with:
+        path: |
+          src/
+          RacingInsightsApp.py
