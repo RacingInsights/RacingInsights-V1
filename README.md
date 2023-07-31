@@ -25,4 +25,4 @@ RacingInsightsApp.py        -> Main file that runs the app
 
 *fuel calculation overlay that tells the user their 2 fuel targets closest to their current average consumption (current laps floored, current laps ceiling)*
 
-<img src="https://github.com/RacingInsights/RacingInsights-V1/blob/main/images/RacingInsights_Webpage.png" alt="Webpage screenshot" width="600"/>
+<img src="https://github.com/RacingInsights/RacingInsights-V1/blob/main/images/RacingInsights_Webpage.png" alt="Webpage screenshot" width="1200"/>
