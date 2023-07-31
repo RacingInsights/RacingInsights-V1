@@ -24,3 +24,5 @@ RacingInsightsApp.py        -> Main file that runs the app
 ## Current MVP (Minimum Viable Product):
 
 *fuel calculation overlay that tells the user their 2 fuel targets closest to their current average consumption (current laps floored, current laps ceiling)*
+
+[![Webpage-screenshot][webpage-screenshot]](https://github.com/RacingInsights/RacingInsights-V1/blob/main/images/RacingInsights_Webpage.png)
