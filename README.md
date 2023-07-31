@@ -21,8 +21,6 @@ RacingInsightsApp.py        -> Main file that runs the app
 
 /setup                      -> Files related to the setup of the app. aka making the installer for the executable.
 
-## Current MVP (Minimum Viable Product):
-
-*fuel calculation overlay that tells the user their 2 fuel targets closest to their current average consumption (current laps floored, current laps ceiling)*
+## Webpage preview
 
 <img src="https://github.com/RacingInsights/RacingInsights-V1/blob/main/images/RacingInsights_Webpage.png" alt="Webpage screenshot" width="1200"/>
